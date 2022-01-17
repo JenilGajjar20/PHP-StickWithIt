@@ -1,0 +1,80 @@
+.contact__container .contact__heading {
+  text-align: center;
+  font-size: 35px;
+}
+
+.contact__container .contact__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 5px;
+  width: 40%;
+  margin: 2rem auto;
+  height: 70vh;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) inset;
+}
+
+.input__group {
+  margin: 25px;
+}
+
+.input__group input,
+textarea {
+  font-size: 1.1rem;
+  padding: 10px;
+  border: 1px solid;
+  outline: none;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: none;
+}
+
+.btn__send {
+  font-size: 20px;
+  margin-left: 25px;
+  border: 1px solid #d3a200;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background: transparent;
+  transition: 0.3s ease;
+  transition-property: background-color, color;
+}
+
+.btn__send:hover {
+  background-color: #d3a200;
+  color: #fff;
+}
+
+@media (max-width: 1200px) {
+  .contact__container .contact__form {
+    width: 50%;
+}
+}
+
+@media (max-width: 810px) {
+  .contact__container .contact__form {
+    width: 70%;
+}
+}
+
+@media (max-width: 650px) {
+  .contact__container .contact__form {
+    width: 80%;
+}
+}
+
+@media (max-width: 540px) {
+  .contact__container .contact__form {
+    width: 90%;
+  }
+}
+
+@media (max-width: 415px) {
+    .contact__container .contact__form {
+        box-shadow: none;
+      }
+}

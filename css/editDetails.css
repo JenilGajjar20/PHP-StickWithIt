@@ -1,0 +1,83 @@
+.container {
+  max-width: 1230px;
+  margin: 1rem auto;
+}
+
+.container h2 {
+  font-size: 1.8rem;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.container .input__group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.container .input__group input {
+  width: 25%;
+  height: 40%;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid;
+  outline: none;
+}
+
+.container .file input{
+  border: none;
+}
+
+.container .input__group .btn {
+  display: block;
+  font-size: 1rem;
+  padding: 10px 15px;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(240, 196, 3);
+  color: #000;
+  outline: none;
+  cursor: pointer;
+}
+
+@media (max-width: 990px) {
+  .container .input__group input {
+    width: 30%;
+  }
+}
+
+@media (max-width: 820px) {
+  .container .input__group input {
+    width: 40%;
+  }
+}
+
+@media (max-width: 610px) {
+  .container .input__group input {
+    width: 45%;
+  }
+}
+
+@media (max-width: 550px) {
+  .container .input__group input {
+    width: 55%;
+  }
+}
+
+@media (max-width: 450px) {
+  .container .input__group input {
+    width: 65%;
+  }
+}
+
+@media (max-width: 360px) {
+  .container .input__group input {
+    width: 75%;
+  }
+}

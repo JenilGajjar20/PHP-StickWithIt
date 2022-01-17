@@ -1,0 +1,160 @@
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.swiLogo__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  animation: transitionIn 0.75s;
+}
+
+.swiLogo__container img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+h2.welcome__user {
+  text-align: center;
+  animation: transitionIn 0.8s;
+}
+
+h2.welcome__user span {
+  color: #069370;
+}
+
+header {
+  position: relative;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #d3a200;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(4, 158, 163, 0.9);
+  animation: transitionIn 0.9s;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clearfix {
+  clear: both;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  display: block;
+  margin: 10px 0;
+  padding: 10px 25px;
+  text-decoration: none;
+  color: #f4f4f4;
+  font-size: 1.2rem;
+  transition: color 0.2s ease-in-out;
+}
+
+nav ul li input {
+  display: block;
+  margin: 10px;
+  padding: 10px 20px;
+  width: 60%;
+  border: none;
+  font-size: 1.1rem;
+  border-bottom: 2px solid #f4f4f4;
+  background: transparent;
+  outline: none;
+}
+
+nav ul li a:hover {
+  color: #069370;
+}
+
+nav ul li span {
+  padding: 10px 0;
+  box-shadow: 0 8px 0px -6px #069370;
+}
+
+@media (max-width: 1215px) {
+  header {
+    margin: 20px;
+  }
+}
+
+@media (max-width: 810px) {
+  .menu-toggle {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    float: right;
+    cursor: pointer;
+    text-align: center;
+    font-size: 30px;
+    color: #f4f4f4;
+  }
+  .menu-toggle::before {
+    content: "\f0c9";
+    font-family: fontAwesome;
+    line-height: 40px;
+  }
+  .menu-toggle.active::before {
+    content: "\f00d";
+  }
+  nav {
+    display: none;
+  }
+  nav.active {
+    display: block;
+    width: 100%;
+  }
+  nav.active ul {
+    display: block;
+  }
+}
+
+@media (max-width: 350px) {
+  .swi__logo {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 320px) {
+  .swi__logo {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 290px) {
+  .swi__logo {
+    font-size: 20px;
+  }
+}

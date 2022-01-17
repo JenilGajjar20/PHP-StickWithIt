@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)),
+    url("../image/waffles.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  padding: 40px 30px;
+  z-index: 100;
+  transition: all 0.3s ease-in-out;
+}
+
+.container .login__text,
+.container .register__text,
+.container .changePassword__text {
+  color: #044a79;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+
+.container .login__form .input__group,
+.container .register__form .input__group,
+.container .changePassword__form .input__group {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 25px;
+}
+
+.input__group p{
+  font-size: 14px;
+  color: #044a79;
+  margin: 3px;
+  font-weight: bold;
+}
+
+.container .login__form .input__group input,
+.container .register__form .input__group input,
+.container .changePassword__form .input__group input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.4rem;
+  background-color: transparent;
+  border-bottom: 2px solid #044a79;
+  outline: none;
+}
+
+.container .login__form .input__group input:focus,
+.container .login__form .input__group input:valid,
+.container .register__form .input__group input:focus,
+.container .register__form .input__group input:valid,
+.container .changePassword__form .input__group input:focus,
+.container .changePassword__form .input__group input:valid {
+  border-color: #3498db;
+}
+
+.container .login__form .input__group .btn,
+.container .register__form .input__group .btn,
+.container .changePassword__form .input__group .btn {
+  display: block;
+  font-size: 1.2rem;
+  padding: 10px 15px;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  background-color: #044a79;
+  color: #fff;
+  width: 100%;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.container .login__form .input__group .btn:hover,
+.container .register__form .input__group .btn:hover,
+.container .changePassword__form .input__group .btn:hover {
+  background-color: #3498db;
+}
+
+p.forget__password {
+  margin-bottom: 5px;
+}
+
+p.login-register__text,
+p.forget__password,
+p.back__to__login {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+p.login-register__text a,
+p.forget__password a,
+p.back__to__login a {
+  text-decoration: none;
+  color: #044a79;
+}
+
+p.login-register__text a:hover,
+p.forget__password a:hover,
+p.back__to__login a:hover {
+  color: #3498db;
+}
+
+@media (max-width: 430px) {
+  .container {
+    width: 300px;
+  }
+}

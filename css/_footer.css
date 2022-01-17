@@ -1,0 +1,40 @@
+.footer__container{
+    background-color: lightgray;
+    padding: 20px;
+    text-align: center;
+    color: #000;
+}
+
+.developer__name{
+    font-size: 1.4rem;
+}
+
+.developer__name span{
+    text-transform: uppercase;
+}
+
+.profile__link a{
+    font-size: 1.8rem;
+    color: #000;
+}
+
+.profile__link a .github{
+    color: rgb(33, 31, 31);
+}
+
+.profile__link a .linkedin{
+    color: blue;
+}
+
+.footer__content{
+    font-size: 1.6rem;
+}
+
+.footer__links{
+    font-size: 1.1rem;
+}
+
+a{
+    text-decoration: none;
+    padding: 5px;
+}
